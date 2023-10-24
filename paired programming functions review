@@ -1,0 +1,41 @@
+def jump_frog(num):
+    for i in range(6):
+        print("Jump #", i, ":ribbit")
+       
+jump_frog(1)
+
+print()
+
+def guess_number(target):
+    guess = -1
+    while guess!= target:
+       
+        guess = int(input("guess a number between 1 and 100:"))
+        if guess < 42:
+            print("too low!")
+        elif guess == 42:
+            print("Thats it!")
+        else:
+            print ("too high!")
+       
+guess_number(42)
+       
+print()
+   
+def is_vampire(age, garlic):
+    if age > 1000 and garlic == False:
+        print("Vampire!")
+    else:
+        print("not a vampire")
+
+is_vampire(500, False)
+
+print()
+
+def rocket_launch(fuel, astronauts):
+    if fuel >= 100*astronauts:
+        print("launch successful")
+    else:
+        print("Insufficient fuel")
+   
+rocket_launch(300, 3)
